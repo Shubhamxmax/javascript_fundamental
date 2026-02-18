@@ -1,6 +1,6 @@
 let boxes=document.querySelectorAll(".box");
 let reset=document.querySelector("#reset");
-let newbtn=document.querySelector("#new-btn");
+// let newbtn=document.querySelector("#new-btn");
 let msgContainer=document.querySelector(".msg-container");
 let msg=document.querySelector("#msg");
 console.log(boxes)
@@ -53,6 +53,20 @@ const showwinner=(winner)=>{
     disableBoxes();
 
 }
+const matchdraw=()=>{
+    let flag=0;
+    for(let box of boxes){
+        if(box.innerText==""){
+            flag=1;
+            break;}
+    }
+    if(flag==0){
+         msg.innerText=`Match-Draw`;
+         msgContainer.classList.remove("hide");
+         disableBoxes();
+
+    }
+}
  const checkwinner=()=>{   
         for(let pattern of winpatterns){
         let pos1=boxes[pattern[0]].innerText;
@@ -64,7 +78,11 @@ const showwinner=(winner)=>{
                 console.log(`Winner is Player ${pos1}`)
                 showwinner(pos1);
             }
+            else{
+                   matchdraw();
+               }
         }
+       
     }
  };
 const resetGame=()=>{
@@ -73,5 +91,5 @@ const resetGame=()=>{
     msgContainer.classList.add("hide")
 
 }
-newbtn.addEventListener("click",resetGame);
+// newbtn.addEventListener("click",resetGame);
 reset.addEventListener("click",resetGame);
