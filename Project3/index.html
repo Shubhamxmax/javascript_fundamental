@@ -8,13 +8,13 @@
 </head>
 <body>
     <h1>Budget Tracker System</h1>
-    <main>
+    <div class="big-container">
         <div class="container">
             <div class="add-info">
                 <div class="add-budget">
-                    <h3>Add Budget</h3>
+                    <h3 >Add Budget</h3>
                     <div class="inputbudget">
-                        <label for="budget">Budget:</label>
+                        <p>Budget:</p>
                         <input type="text" id="budget">
                     </div>
                     <button id="adding">Add Budget</button>
@@ -22,11 +22,11 @@
                 <div class="add-expense">
                     <h3>Add Expense</h3>
                     <div class="ExpenseTitle">
-                        <label for="expensename">Expense Title:</label>
+                        <p>Expense Title:</p>
                         <input type="text" id="expensename">
                     </div>
                     <div class="ExpenseAmount">
-                        <label for="amount">Amount:</label>
+                        <p>Amount:</p>
                         <input type="text" id="amount">
                     </div>
                     <button id="adding">Add Expense</button>
@@ -35,30 +35,30 @@
             </div>
             <div class="show-info">
                 <div class="information">
-                    <div class="totalb">
+                    <div class="amt">
                         <p>Total Budget:</p>
                         <p>10000.00</p>
                     </div>
-                    <div class="totale">
+                    <div class="amt">
                         <p>Total Budget:</p>
                         <p>10000.00</p>
                     </div>
-                    <div class="budgetl">
+                    <div class="amt">
                         <p>Budget Left:</p>
                         <p>10000.00</p>
                     </div>
                 </div>
-                <p>Expense History</p>
+                <p id="text">Expense History:</p>
                 <div class="table">
-                    <div class="tablecolumn">
-                        <p>Expense Name</p>
-                        <p>Amount</p>
-                        <p>Action</p>
-                    </div>
+                    
+                        <div class="exp"><b>Expense Name</b></div>
+                        <div class="exp"><b>Amount</b></div>
+                        <div class="exp"><b>Action</b></div>
+
                 </div>
             </div>
         </div>
-    </main>
+    </div>
     
 </body>
 </html>
