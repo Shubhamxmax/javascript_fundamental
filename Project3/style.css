@@ -1,6 +1,7 @@
 *{
 padding:0;
 margin:0;
+box-sizing:border-box;
 }
 body{
     background-color: #7DF9FF;
@@ -112,4 +113,17 @@ button{
 .exp{
     text-align: center;
     width:28%;
+}
+.newtable{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.remove{
+    background-color: red;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 23px;
+    border-radius: 6px;
 }

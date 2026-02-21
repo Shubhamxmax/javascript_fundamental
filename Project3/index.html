@@ -15,7 +15,7 @@
                     <h3 >Add Budget</h3>
                     <div class="inputbudget">
                         <p>Budget:</p>
-                        <input type="text" id="budget">
+                        <input type="text" inputmode="numeric"  placeholder="Enter Budget" id="budget">
                     </div>
                     <button id="adding">Add Budget</button>
                 </div>
@@ -29,7 +29,7 @@
                         <p>Amount:</p>
                         <input type="text" id="amount">
                     </div>
-                    <button id="adding">Add Expense</button>
+                    <button id="addexpense">Add Expense</button>
                 </div>
                 <button id="reset"> Reset All</button>
             </div>
@@ -37,15 +37,15 @@
                 <div class="information">
                     <div class="amt">
                         <p>Total Budget:</p>
-                        <p>10000.00</p>
+                        <p id="show-budget">0</p>
                     </div>
                     <div class="amt">
-                        <p>Total Budget:</p>
-                        <p>10000.00</p>
+                        <p>Total Expense:</p>
+                        <p id="show-expense">0</p>
                     </div>
                     <div class="amt">
                         <p>Budget Left:</p>
-                        <p>10000.00</p>
+                        <p id="left"></p>
                     </div>
                 </div>
                 <p id="text">Expense History:</p>
@@ -59,6 +59,6 @@
             </div>
         </div>
     </div>
-    
+    <script src="app.js"></script>
 </body>
 </html>
